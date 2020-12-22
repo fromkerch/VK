@@ -16,6 +16,10 @@ public class Post {
     private int canPin;
     private int canDelete;
     private boolean isFavorite;
+    private Geo geo;
+    private PostSource postSource;
+    private int isPinned;
+    private int markedAsAds;
 
 
     public int getId() {
@@ -100,7 +104,6 @@ public class Post {
     }
 
 
-
     public ViewsInfo getViewInfo() {
         return viewInfo;
     }
@@ -116,7 +119,6 @@ public class Post {
     public void setRepostInfo(RepostsInfo repostInfo) {
         this.repostInfo = repostInfo;
     }
-
 
     public int getCanPin() {
         return canPin;
@@ -143,5 +145,36 @@ public class Post {
         isFavorite = favorite;
     }
 
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public int getIsPinned() {
+        return isPinned;
+    }
+
+    public void setIsPinned(int isPinned) {
+        this.isPinned = isPinned;
+    }
+
+    public int getMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(int markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
 
 }
